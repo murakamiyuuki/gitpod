@@ -183,6 +183,9 @@ type WorkspaceConfig struct {
 
 	// GitpodHost points to the Gitpod API server we're to talk to
 	GitpodHost string `env:"GITPOD_HOST"`
+
+	// GitpodTasks is the task configuration of the workspace
+	GitpodTasks string `env:"GITPOD_TASKS"`
 }
 
 // WorkspaceGitpodToken is a list of tokens that should be added to supervisor's token service
